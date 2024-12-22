@@ -220,10 +220,12 @@
 }
 .res-head {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0rem 10rem;
-  padding: 1rem 0rem;
+  margin: 1rem 8rem;
+  padding: 1rem 1rem;
   display: flex;
   justify-content: space-between;
+  box-shadow: 5px 5px 5px #aaaaaa;
+  border-radius: 1rem;
 }
 .menu-item {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
