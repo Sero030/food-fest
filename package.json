@@ -18,7 +18,7 @@
     "build": "parcel build index.html",
     "test": "jest",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "main -d build"
   },
   "keywords": [],
   "author": "Sanyam Yadvendra",
