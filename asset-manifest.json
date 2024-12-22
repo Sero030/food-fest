@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/food-fest/static/css/main.9e331df5.css",
+    "main.css": "/food-fest/static/css/main.58af6447.css",
     "main.js": "/food-fest/static/js/main.841d1a59.js",
     "static/media/logo.png": "/food-fest/static/media/logo.c947e09a87883b160c8c.png",
     "index.html": "/food-fest/index.html",
-    "main.9e331df5.css.map": "/food-fest/static/css/main.9e331df5.css.map",
+    "main.58af6447.css.map": "/food-fest/static/css/main.58af6447.css.map",
     "main.841d1a59.js.map": "/food-fest/static/js/main.841d1a59.js.map"
   },
   "entrypoints": [
-    "static/css/main.9e331df5.css",
+    "static/css/main.58af6447.css",
     "static/js/main.841d1a59.js"
   ]
 }
