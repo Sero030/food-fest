@@ -8,6 +8,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Error from "./components/Error";
 import Menu from "./components/Menu";
+import "./index.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
