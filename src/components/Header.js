@@ -6,13 +6,16 @@ const Header = () => {
   const [btnName, setBtnName] = useState("Login");
   return (
     <div className="header-container">
-      <Link to="/">
+      <Link to="/food-fest">
         <img className="logo" src={logo}></img>
       </Link>
       <ul className="nav-items">
         <li>
           <button>
-            <Link to="/" style={{ textDecoration: "none", color: "black" }}>
+            <Link
+              to="/food-fest"
+              style={{ textDecoration: "none", color: "black" }}
+            >
               Home
             </Link>
           </button>
@@ -20,7 +23,7 @@ const Header = () => {
         <li>
           <button>
             <Link
-              to="/about"
+              to="/food-fest/about"
               style={{ textDecoration: "none", color: "black" }}
             >
               About

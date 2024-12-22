@@ -23,24 +23,24 @@ const AppLayout = () => {
 
 const appRouter = createBrowserRouter([
   {
-    path: "/",
+    path: "/food-fest/",
     element: <AppLayout />,
     errorElement: <Error />,
     children: [
       {
-        path: "/",
+        path: "/food-fest/",
         element: <Body />,
       },
       {
-        path: "/about",
+        path: "/food-fest/about",
         element: <About />,
       },
       {
-        path: "/contact",
+        path: "/food-fest/contact",
         element: <Contact />,
       },
       {
-        path: "/restaurant/:resId",
+        path: "/food-fest/restaurant/:resId",
         element: <Menu />,
       },
     ],

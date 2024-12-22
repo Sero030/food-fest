@@ -69,7 +69,7 @@ const Body = () => {
       <div className="card-container">
         {filterList.map((restaurant) => (
           <Link
-            to={"/restaurant/" + restaurant.info.id}
+            to={"/food-fest/restaurant/" + restaurant.info.id}
             key={restaurant.info.id}
             style={{ textDecoration: "none", color: "black" }}
           >
