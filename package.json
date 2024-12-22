@@ -1,0 +1,27 @@
+{
+  "homepage": "https://sero030.github.io/food-fest/",
+  "name": "food-fest",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "parcel": "^2.13.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.0.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0",
+    "process": "^0.11.10"
+  },
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "keywords": [],
+  "author": "Sanyam Yadvendra",
+  "license": "ISC",
+  "description": ""
+}
