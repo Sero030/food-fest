@@ -1,5 +1,5 @@
-import veg from "../../public/images/Veg.png";
-import nonVeg from "../../public/images/Non-Veg.png";
+import veg from "../images/Veg.png";
+import nonVeg from "../images/Non-Veg.png";
 import { ITEM_URL } from "../utils/constants";
 
 const MenuItems = (props) => {

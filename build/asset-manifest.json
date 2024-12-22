@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.js": "/food-fest/static/js/main.b5b9603a.js",
+    "static/media/logo.png": "/food-fest/static/media/logo.c947e09a87883b160c8c.png",
+    "index.html": "/food-fest/index.html",
+    "main.b5b9603a.js.map": "/food-fest/static/js/main.b5b9603a.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.b5b9603a.js"
+  ]
+}
