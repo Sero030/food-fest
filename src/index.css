@@ -247,3 +247,48 @@
   width: 10rem;
   border-radius: 1rem;
 }
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.65rem 0.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 30rem;
+}
+.login-form label {
+  padding-top: 1rem;
+}
+.login-form input {
+  height: 2rem;
+  margin: 0.25rem;
+  border-radius: 0.5rem;
+  background-color: #f0f0f0;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: medium;
+  cursor: text;
+  border: 0;
+}
+.login-form button {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 0.25rem;
+  transition: 0.5s;
+  border-radius: 0.5rem;
+  border: 0;
+  background-color: #f57d11;
+  height: 3rem;
+  color: white;
+  transition: 0.5s;
+}
+.login-form button:hover {
+  cursor: pointer;
+  transform: scale(0.95);
+}
+.form-error {
+  font-size: 0.8rem;
+  color: red;
+  font-weight: lighter;
+  margin-top: 0.25rem;
+}

@@ -4,11 +4,13 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "formik": "^2.4.6",
     "parcel": "^2.13.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.0.2",
-    "react-scripts": "^5.0.1"
+    "react-scripts": "^5.0.1",
+    "yup": "^1.6.1"
   },
   "devDependencies": {
     "@babel/plugin-transform-private-property-in-object": "^7.25.9",

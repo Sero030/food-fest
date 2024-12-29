@@ -44,15 +44,11 @@ const appRouter = createBrowserRouter([
         path: "/food-fest/restaurant/:resId",
         element: <Menu />,
       },
+      {
+        path: "/food-fest/login",
+        element: <Login />,
+      },
     ],
   },
 ]);
 root.render(<RouterProvider router={appRouter} />);
-
-console.log("hello 1");
-const fun = async () => {
-  await setTimeout(() => {
-    console.log("hello 2");
-  }, 0);
-};
-console.log("hello 3");
