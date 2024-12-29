@@ -9,6 +9,7 @@ import Contact from "./components/Contact";
 import Error from "./components/Error";
 import Menu from "./components/Menu";
 import "./index.css";
+import Login from "./components/Login";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 

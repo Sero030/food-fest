@@ -9,21 +9,23 @@ const Body = () => {
   const [filterList, setFilterList] = useState([]);
   const [searchText, setSearchText] = useState("");
   const fetchData = async () => {
-    const rawData = await fetch(DATA_API);
-    const dataJson = await rawData.json();
-    setRestaurantList(
-      dataJson?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
-        ?.restaurants
-    );
-    setFilterList(
-      dataJson?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
-        ?.restaurants
-    );
+    try {
+      const rawData = await fetch(DATA_API);
+      const dataJson = await rawData.json();
+      const restaurants =
+        dataJson?.data?.cards?.[4]?.card?.card?.gridElements?.infoWithStyle
+          ?.restaurants || []; // Default to an empty array if undefined
+      setRestaurantList(restaurants);
+      setFilterList(restaurants);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+      setRestaurantList([]); // Fallback to empty array
+      setFilterList([]);
+    }
   };
   useEffect(() => {
     fetchData();
   }, []);
-  console.log(filterList);
   return filterList.length === 0 ? (
     <Shimmer />
   ) : (
@@ -69,7 +71,7 @@ const Body = () => {
       <div className="card-container">
         {filterList.map((restaurant) => (
           <Link
-            to={"/food-fest/restaurant/" + restaurant.info.id}
+            to={"/restaurant/" + restaurant.info.id}
             key={restaurant.info.id}
             style={{ textDecoration: "none", color: "black" }}
           >

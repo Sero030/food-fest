@@ -3,7 +3,6 @@ import { useState } from "react";
 import { Link } from "react-router";
 
 const Header = () => {
-  const [btnName, setBtnName] = useState("Login");
   return (
     <div className="header-container">
       <Link to="/food-fest">
@@ -31,14 +30,12 @@ const Header = () => {
           </button>
         </li>
         <li>
-          <button
-            className="login-btn"
-            onClick={() => {
-              btnName === "Login" ? setBtnName("Logout") : setBtnName("Login");
-            }}
+          <Link
+            to="/food-fest/login"
+            style={{ textDecoration: "none", color: "black" }}
           >
-            {btnName}
-          </button>
+            <button className="login-btn">Login</button>
+          </Link>
         </li>
         <li>
           <button className="cart-btn">Cart</button>
